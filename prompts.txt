@@ -8,3 +8,7 @@ No funciono mucho, añadi las imagenes personalmente y modifique los modelos de 
 Paso 3 "Mejora visual"
 Prompt: Ahora necesito que le hagas a la pagina: -mejorar el diseño visual -aplicar estilos más trabajados -mejorar la distribución del contenido -Lograr una apariencia moderna.
 Si bien me creo el diseño y aplico mejores estilos, igual tuve que modificar personalmente alguns nombres y imagenes que borro.
+
+Paso 4 "Incorporacion de contenido"
+Prompt :Debes agregar nuevas secciones, por ejemplo: características principales, beneficios del producto, especificaciones técnicas, posibles usos o ventajas frente a otros productos.
+Si bien el prompt funciono en articular mejor la pagina, puse mejor contenido en relacion a cada automovil y algo mas agradable a la vista, para que este todo mas junto.

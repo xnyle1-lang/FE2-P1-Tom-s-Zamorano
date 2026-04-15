@@ -31,7 +31,16 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         header h1 {
-            font-size:
+            font-size: 2.5rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .highlight {
             background-color: #fff3e0;
             padding: 2rem;
             border-radius: 10px;
@@ -50,10 +59,41 @@
             font-size: 1.1rem;
             margin: 0.5rem 0;
         }
+        
+        /* Features Section */
+        .section {
+            margin: 2rem 0;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #4e54c8;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .feature-item {
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border-left: 4px solid #4e54c8;
+            border-radius: 5px;
+        }
+        .feature-item h3 {
+            margin: 0 0 0.5rem;
+            color: #4e54c8;
+        }
+        
         .cars {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
+            margin: 2rem 0;
         }
         .car {
             background-color: white;
@@ -75,6 +115,48 @@
             margin: 0.5rem 1rem;
             font-size: 1rem;
         }
+        .car-specs {
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border-top: 2px solid #4e54c8;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+        .car-specs p {
+            margin: 0.3rem 0;
+            padding: 0;
+        }
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        .specs-table th, .specs-table td {
+            border: 1px solid #ddd;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        .specs-table th {
+            background-color: #4e54c8;
+            color: white;
+        }
+        .benefits-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .benefits-list li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .benefits-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4e54c8;
+            font-weight: bold;
+        }
+        
         footer {
             text-align: center;
             padding: 1rem 0;
@@ -96,24 +178,103 @@
             <p>Precio: $50,000</p>
             <p>Un deportivo de lujo con tecnología de punta y diseño exclusivo.</p>
         </div>
+
+        <!-- Features Section -->
+        <div class="section">
+            <h2>Características Principales</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>Rendimiento</h3>
+                    <p>Motor potente con alta aceleración y velocidad máxima.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Seguridad</h3>
+                    <p>Sistema de frenos ABS y airbags múltiples.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Tecnología</h3>
+                    <p>Pantalla táctil, conectividad Bluetooth y GPS.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Comodidad</h3>
+                    <p>Asientos ergonómicos y aire acondicionado automático.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Benefits Section -->
+        <div class="section">
+            <h2>Beneficios del Producto</h2>
+            <ul class="benefits-list">
+                <li>Garantía de 5 años en todas las piezas</li>
+                <li>Servicio técnico gratuito por 2 años</li>
+                <li>Financiamiento con tasas competitivas</li>
+                <li>Cambio de aceite gratuito anual</li>
+                <li>Asistencia en carretera 24/7</li>
+                <li>Revisión técnica completa antes de la entrega</li>
+            </ul>
+        </div>
+
+        <!-- Cars Section -->
         <div class="cars">
             <div class="car">
                 <img src="https://tse4.mm.bing.net/th/id/OIP.KfkCAjq8lZbsbvVaiJeg7AHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Auto 1">
                 <h3>Modelo: Subaru BRZ 2024</h3>
                 <p>Precio: $20,000</p>
                 <p>Un auto deportivo con gran rendimiento y diseño moderno.</p>
+                <div class="car-specs">
+                    <p><strong>Motor:</strong> 2.4L Boxer</p>
+                    <p><strong>Potencia:</strong> 228 HP</p>
+                    <p><strong>Consumo:</strong> 8.2 L/100km</p>
+                    <p><strong>Maletero:</strong> 311 L</p>
+                </div>
             </div>
             <div class="car">
                 <img src="https://tse4.mm.bing.net/th/id/OIP.Sp3-99wZEWSAwDX8ARQO2QHaDe?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Auto 2">
                 <h3>Modelo: Ford Explorer 2025</h3>
                 <p>Precio: $25,000</p>
                 <p>Ideal para la familia, con amplio espacio y comodidad.</p>
+                <div class="car-specs">
+                    <p><strong>Motor:</strong> 3.0L EcoBoost</p>
+                    <p><strong>Potencia:</strong> 365 HP</p>
+                    <p><strong>Consumo:</strong> 10.5 L/100km</p>
+                    <p><strong>Maletero:</strong> 617 L</p>
+                </div>
             </div>
             <div class="car">
                 <img src="https://images.carexpert.com.au/resize/3000/-/app/uploads/2025/02/2025-mercedes-benz-c200-c-class-3.jpg" alt="Auto 3">
                 <h3>Modelo: Mercedes C200 2024</h3>
                 <p>Precio: $30,000</p>
                 <p>Elegancia y confort para tus viajes de negocios.</p>
+                <div class="car-specs">
+                    <p><strong>Motor:</strong> 2.0L Turbo</p>
+                    <p><strong>Potencia:</strong> 184 HP</p>
+                    <p><strong>Consumo:</strong> 7.5 L/100km</p>
+                    <p><strong>Maletero:</strong> 455 L</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Advantages Section -->
+        <div class="section">
+            <h2>Ventajas Frente a Otros Productos</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>Mejor Relación Precio-Calidad</h3>
+                    <p>Ofertas competitivas sin comprometer la calidad.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Amplio Catálogo</h3>
+                    <p>Modelos para todos los presupuestos y necesidades.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Servicio Post-Venta</h3>
+                    <p>Atención al cliente y mantenimiento excepcional.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Garantía Extendida</h3>
+                    <p>Mayor cobertura que la competencia.</p>
+                </div>
             </div>
         </div>
     </div>
