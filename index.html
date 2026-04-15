@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Venta de Automóviles</title>
     <style>
         /* General Styles */
@@ -33,13 +33,13 @@
         header h1 {
             font-size: 2.5rem;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
         }
-        
+
         .highlight {
             background-color: #fff3e0;
             padding: 2rem;
@@ -59,8 +59,8 @@
             font-size: 1.1rem;
             margin: 0.5rem 0;
         }
-        
-        /* Features Section */
+
+        /* Sections */
         .section {
             margin: 2rem 0;
             padding: 2rem;
@@ -73,6 +73,8 @@
             margin-bottom: 1.5rem;
             color: #4e54c8;
         }
+
+        /* Features */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -88,7 +90,8 @@
             margin: 0 0 0.5rem;
             color: #4e54c8;
         }
-        
+
+        /* Cars */
         .cars {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -126,6 +129,7 @@
             margin: 0.3rem 0;
             padding: 0;
         }
+
         .specs-table {
             width: 100%;
             border-collapse: collapse;
@@ -140,6 +144,7 @@
             background-color: #4e54c8;
             color: white;
         }
+
         .benefits-list {
             list-style-type: none;
             padding-left: 0;
@@ -156,7 +161,82 @@
             color: #4e54c8;
             font-weight: bold;
         }
-        
+
+        /* Product sheet / comparativa */
+        .product-sheet {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 1.5rem;
+            align-items: start;
+        }
+        /* single product card within sheet */
+        .product-card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+        }
+        .product-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .product-card .card-body {
+            padding: 1rem;
+        }
+        .product-card h3 {
+            color: #4e54c8;
+            margin-bottom: 0.5rem;
+        }
+        .spec-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+        .spec-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.4rem 0;
+            border-bottom: 1px dashed #eee;
+        }
+        .spec-list li span:first-child { color: #666; }
+        .spec-list li span:last-child { color: #222; font-weight: 600; }
+
+        /* Comparison table */
+        .compare-wrapper {
+            overflow-x: auto;
+        }
+        .compare-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 640px;
+        }
+        .compare-table th, .compare-table td {
+            border: 1px solid #e2e2f0;
+            padding: 0.75rem;
+            text-align: center;
+        }
+        .compare-table th {
+            background-color: #f1f2ff;
+            color: #333;
+            font-weight: 700;
+        }
+        .compare-table td.model {
+            text-align: left;
+            font-weight: 600;
+            color: #4e54c8;
+        }
+        .highlight-best {
+            background-color: #e8f5e9;
+        }
+
+        @media (max-width: 900px) {
+            .product-sheet {
+                grid-template-columns: 1fr;
+            }
+        }
+
         footer {
             text-align: center;
             padding: 1rem 0;
@@ -255,6 +335,97 @@
             </div>
         </div>
 
+        <!-- Product sheet / Comparativa -->
+        <div class="section">
+            <h2>Ficha de Producto / Comparativa</h2>
+            <p style="margin: .5rem 0 1rem; color:#555;">Ficha técnica de un producto destacado y tabla comparativa clara con atributos técnicos relevantes.</p>
+
+            <div class="product-sheet">
+                <!-- Single product card (ficha) -->
+                <div class="product-card" aria-labelledby="ficha-title">
+                    <img src="https://images.carexpert.com.au/resize/3000/-/app/uploads/2025/02/2025-mercedes-benz-c200-c-class-3.jpg" alt="Ficha Mercedes C200">
+                    <div class="card-body">
+                        <h3 id="ficha-title">Ficha Técnica: Mercedes C200 2024</h3>
+                        <p style="margin:.4rem 0 0.8rem; color:#666;">Presentación resumida y organizada de las especificaciones más relevantes.</p>
+                        <ul class="spec-list">
+                            <li><span>Motor</span><span>2.0L Turbo</span></li>
+                            <li><span>Potencia</span><span>184 HP</span></li>
+                            <li><span>Transmisión</span><span>Automática 9G-TRONIC</span></li>
+                            <li><span>Consumo combinado</span><span>7.5 L/100km</span></li>
+                            <li><span>Maletero</span><span>455 L</span></li>
+                            <li><span>0-100 km/h</span><span>7.9 s</span></li>
+                            <li><span>Combustible</span><span>Gasolina</span></li>
+                            <li><span>Precio</span><span>$30,000</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Comparison table -->
+                <div class="compare-wrapper" role="region" aria-label="Comparativa de modelos">
+                    <table class="compare-table" summary="Comparativa técnica entre Subaru BRZ, Ford Explorer y Mercedes C200">
+                        <thead>
+                            <tr>
+                                <th>Atributo</th>
+                                <th>Subaru BRZ 2024</th>
+                                <th>Ford Explorer 2025</th>
+                                <th>Mercedes C200 2024</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="model">Motor</td>
+                                <td>2.4L Boxer</td>
+                                <td>3.0L EcoBoost</td>
+                                <td>2.0L Turbo</td>
+                            </tr>
+                            <tr>
+                                <td class="model">Potencia</td>
+                                <td>228 HP</td>
+                                <td class="highlight-best">365 HP</td>
+                                <td>184 HP</td>
+                            </tr>
+                            <tr>
+                                <td class="model">Transmisión</td>
+                                <td>Manual / Automática 6 vel.</td>
+                                <td>Automática 10 vel.</td>
+                                <td>Automática 9 vel.</td>
+                            </tr>
+                            <tr>
+                                <td class="model">Consumo combinado</td>
+                                <td>8.2 L/100km</td>
+                                <td>10.5 L/100km</td>
+                                <td class="highlight-best">7.5 L/100km</td>
+                            </tr>
+                            <tr>
+                                <td class="model">Maletero</td>
+                                <td>311 L</td>
+                                <td class="highlight-best">617 L</td>
+                                <td>455 L</td>
+                            </tr>
+                            <tr>
+                                <td class="model">0-100 km/h</td>
+                                <td>6.5 s</td>
+                                <td>7.8 s</td>
+                                <td>7.9 s</td>
+                            </tr>
+                            <tr>
+                                <td class="model">Tipo de combustible</td>
+                                <td>Gasolina</td>
+                                <td>Gasolina</td>
+                                <td>Gasolina</td>
+                            </tr>
+                            <tr>
+                                <td class="model">Precio aproximado</td>
+                                <td>$20,000</td>
+                                <td>$25,000</td>
+                                <td>$30,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
         <!-- Advantages Section -->
         <div class="section">
             <h2>Ventajas Frente a Otros Productos</h2>
@@ -282,4 +453,4 @@
         <p>© 2023 Venta de Automóviles. Todos los derechos reservados.</p>
     </footer>
 </body>
-</html>
+</html></div></table></div>

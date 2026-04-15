@@ -20,3 +20,7 @@ Funciono bien.
 Paso 4,5 "CSS" 
 prompt: "Que el CSS sea util para celular y pc"
 Estaba mal el CSS, por eso tuve que crear nuevamente un CSS para celular y pc 
+
+Paso 5 "Mejora final obligatoria"
+prompt : Debes incorporar una sección tipo ficha de producto o comparativa, que incluya: características organizadas (por ejemplo: tabla o listado), al menos 2–3 atributos técnicos relevantes, una presentación clara y ordenada de la información.
+La tabla quedo bien.
