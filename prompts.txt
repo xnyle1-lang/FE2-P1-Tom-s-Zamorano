@@ -16,3 +16,7 @@ Si bien el prompt funciono en articular mejor la pagina, puse mejor contenido en
 Paso 4 "CSS Celular"
 Prompt : Crea que el sitio pueda ser visualizado en celulares, el diseño debe ser adaptado a pantallas pequeñas, que sea legible y que no tenga problemas d distribuicion o superposicion.
 Funciono bien.
+
+Paso 4,5 "CSS" 
+prompt: "Que el CSS sea util para celular y pc"
+Estaba mal el CSS, por eso tuve que crear nuevamente un CSS para celular y pc 
