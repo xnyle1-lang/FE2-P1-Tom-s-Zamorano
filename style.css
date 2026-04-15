@@ -143,4 +143,7 @@ img {
 }
 
 .btn:active { transform: translateY(1px); }
-.btn:focus { box
+.btn:focus {
+    box-shadow: 0 0 0 4px rgba(11,116,222,0.12);
+    outline: none;
+}

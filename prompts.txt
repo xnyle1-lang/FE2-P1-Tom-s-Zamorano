@@ -24,3 +24,6 @@ Estaba mal el CSS, por eso tuve que crear nuevamente un CSS para celular y pc
 Paso 5 "Mejora final obligatoria"
 prompt : Debes incorporar una sección tipo ficha de producto o comparativa, que incluya: características organizadas (por ejemplo: tabla o listado), al menos 2–3 atributos técnicos relevantes, una presentación clara y ordenada de la información.
 La tabla quedo bien.
+
+Paso 5,1 "Error"
+Me fije que habia un error de syntaxis, lo arregle.
