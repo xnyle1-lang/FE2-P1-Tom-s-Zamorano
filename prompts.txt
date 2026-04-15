@@ -6,3 +6,5 @@ Prompt: Ahora añadele imagenes sacadas de internet y que tenga mejor aspecto la
 No funciono mucho, añadi las imagenes personalmente y modifique los modelos de los automoviles para que parezca mas real. 
 
 Paso 3 "Mejora visual"
+Prompt: Ahora necesito que le hagas a la pagina: -mejorar el diseño visual -aplicar estilos más trabajados -mejorar la distribución del contenido -Lograr una apariencia moderna.
+Si bien me creo el diseño y aplico mejores estilos, igual tuve que modificar personalmente alguns nombres y imagenes que borro.
