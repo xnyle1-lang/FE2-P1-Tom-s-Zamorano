@@ -12,3 +12,7 @@ Si bien me creo el diseño y aplico mejores estilos, igual tuve que modificar pe
 Paso 4 "Incorporacion de contenido"
 Prompt :Debes agregar nuevas secciones, por ejemplo: características principales, beneficios del producto, especificaciones técnicas, posibles usos o ventajas frente a otros productos.
 Si bien el prompt funciono en articular mejor la pagina, puse mejor contenido en relacion a cada automovil y algo mas agradable a la vista, para que este todo mas junto.
+
+Paso 4 "CSS Celular"
+Prompt : Crea que el sitio pueda ser visualizado en celulares, el diseño debe ser adaptado a pantallas pequeñas, que sea legible y que no tenga problemas d distribuicion o superposicion.
+Funciono bien.
