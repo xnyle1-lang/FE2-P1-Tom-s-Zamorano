@@ -1,2 +1,8 @@
 Paso 1 "El inicio"
 Prompt: Creame un inicio para una pagina de venta de automoviles"
+
+Paso 2 "Mejora visual"
+Prompt: Ahora añadele imagenes sacadas de internet y que tenga mejor aspecto la pagina, un aspecto moderno.
+No funciono mucho, añadi las imagenes personalmente y modifique los modelos de los automoviles para que parezca mas real. 
+
+Paso 3 "Mejora visual"
